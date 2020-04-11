@@ -3,7 +3,7 @@ import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Main from './components/MainComponent';
-
+import 'font-awesome/css/font-awesome.min.css';
 
 class App extends Component {
   render() {

@@ -1,5 +1,37 @@
 import React, { Component } from 'react';
 import { Row, Container, Col, Nav } from 'react-bootstrap';
+import { faFlask, faMugHot, faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const star = <FontAwesomeIcon icon={faStar} color='rgba(255, 185, 0, 0.85)' />;
+var stars1 = [];
+for (let i = 0; i < 5; i++) {
+  stars1.push(star);
+}
+var stars2 = [];
+for (let i = 0; i < 5; i++) {
+  stars2.push(star);
+}
+var stars3 = [];
+for (let i = 0; i < 4; i++) {
+  stars3.push(star);
+}
+var stars4 = [];
+for (let i = 0; i < 4; i++) {
+  stars4.push(star);
+}
+var stars5 = [];
+for (let i = 0; i < 4; i++) {
+  stars5.push(star);
+}
+var stars6 = [];
+for (let i = 0; i < 4; i++) {
+  stars6.push(star);
+}
+var stars7 = [];
+for (let i = 0; i < 3; i++) {
+  stars7.push(star);
+}
 
 class About extends Component {
   constructor(props) {
@@ -12,8 +44,18 @@ class About extends Component {
           <Row>
             <Col>
               <h1>More About Me</h1>
-              <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering</span><br></br>
-              <span>During free time, I enjoy coffee, art, TV series and explore delivious food</span><p></p><p></p>
+              <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering &nbsp;&nbsp;</span>
+              <FontAwesomeIcon icon={faFlask} /><br></br>
+              <span>During free time, I enjoy coffee, art, TV series and explore delivious food &nbsp;&nbsp;</span>
+              <FontAwesomeIcon icon={faMugHot} /><p></p><p></p>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="font-left bold">
+              <span>I am ...</span>
+            </Col>
+            <Col className="font-left bold">
+              <p>Take my best ability as 100,  the other skills are following relatively:</p>
             </Col>
           </Row>
           <Row>
@@ -27,28 +69,53 @@ class About extends Component {
               <span>In a daily machine learning engineer in Yelp,</span><br></br>
               <span>besides hard skills, we also have to write down documentation and dicuss ideas with teamamtes and persuade people to develop the project.</span><br></br>
               <span></span><br></br>
-              </Col>
+            </Col>
             <Col className="font-left">
-              <span>Living in San Francisco</span><br></br>
-              <span>A machine learning engineer combining modeling and date engineering</span><br></br>
-              <span>During free time, enjoy coffee and art</span><br></br>
-              </Col>
+              <Row>
+                <Col className="bold">recommendation system:</Col>
+                <Col>{stars1} &nbsp;&nbsp;100 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">data engineering:</Col>
+                <Col>{stars2} &nbsp;&nbsp;85 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">deep learning (CV):</Col>
+                <Col>{stars3} &nbsp;&nbsp;75 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">Statistics:</Col>
+                <Col>{stars4} &nbsp;&nbsp;80 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">deep learning (NLP):</Col>
+                <Col>{stars5} &nbsp;&nbsp;70 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">full-stack engineering:</Col>
+                <Col>{stars6} &nbsp;&nbsp;80 <p/></Col>
+              </Row>
+              <Row>
+                <Col className="bold">automation:</Col>
+                <Col>{stars7} &nbsp;&nbsp;60 <p/></Col>
+              </Row>
+            </Col>
           </Row>
-          <Row>
-            <Col>
+          <Row className="experience-block">
+            <Col className="padding-top">
               <h2>Experience</h2>
-              <Nav.Link 
-                href="https://drive.google.com/file/d/1i-D__LSGS7CEESDT0zOWp17QJRu69ELL/view?usp=sharing" 
+              <Nav.Link
+                href="https://drive.google.com/file/d/1i-D__LSGS7CEESDT0zOWp17QJRu69ELL/view?usp=sharing"
                 className=" name-logo">
-                  Resume
+                Resume
               </Nav.Link>
             </Col>
           </Row>
-          <Row>
+          <Row className="experience-block">
             <Col className="font-left">
-              <h2>Yelp</h2>
+              <h2>Yelp&nbsp;&nbsp;<span className="fa fa-yelp fa-lg"/></h2>
               <span className="bold">Ads Machine Learning Engineer, San Francisco</span><p></p>
-              <span>Delivered AB testing experiments for Ads Recall to increase user engagement 
+              <span>Delivered AB testing experiments for Ads Recall to increase user engagement
               with data analysis, SQL, Redshift, ElasticSearch, Python and Java</span><p></p>
               <span>Delivered features and batches for Ads Targeting to increase model reliability
               and CTR with machine learning, pyspark, Python</span><p></p>
@@ -60,7 +127,7 @@ class About extends Component {
               <span>Designed and developed a real-time log tracking web application to visualize 10k+ logs with ElasticSearch, MongoDB, Vue.js and GoLang</span><p></p>
             </Col>
           </Row>
-          <Row>
+          <Row className="experience-block">
             <Col className="font-left">
               <h2>Art Exhibition Project</h2>
               <span className="bold">Machine Learning Engineer, New York remote</span><p></p>
@@ -75,8 +142,8 @@ class About extends Component {
               <span>Preprocessed sentences to unify format and extracted features with Python</span><p></p>
             </Col>
           </Row>
-          <Row>
-          <Col className="font-left">
+          <Row className="experience-block">
+            <Col className="font-left">
               <h2>IBM</h2>
               <span className="bold">Summer intern, Taiwan</span><p></p>
               <span>Improved the insurance sales performance by exploring Cross-Selling for Shin Kong Life, one of the largest insurancecompanies in Taiwan</span><p></p>
@@ -87,8 +154,8 @@ class About extends Component {
               <span>Collaborated with professor process 469 million from file system to database with withShellandPostgreSQL</span><p></p>
             </Col>
           </Row>
-          <Row>
-          <Col className="font-left">
+          <Row className="experience-block">
+            <Col className="font-left">
               <h2>Super Computer Center</h2>
               <span className="bold">Volunteer Research Assistant, San Diego</span><p></p>
               <span>Improved to accuracy 70% to recognize six emotions of stories from GoFundMe by lexicon-based and Bayesian model</span><p></p>

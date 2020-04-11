@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Nav, NavDropdown } from 'react-bootstrap';
+import { Nav, NavDropdown } from 'react-bootstrap';
 
 class Main extends Component {
   constructor(props) {
@@ -7,9 +7,9 @@ class Main extends Component {
   }
   render() {
     return (
-      <div className='header' id='home'>
+      <div className='header-style' id='home'>
         <Nav defaultActiveKey="/home" as="ul" className="white-font-color">
-            <Nav.Link href="#home" className="grey-font-color name-logo">Light Lee</Nav.Link>
+          <Nav.Link href="#home" className="grey-font-color name-logo">Light Lee</Nav.Link>
           <Nav className="mr-auto">
             <sapn></sapn>
           </Nav>
