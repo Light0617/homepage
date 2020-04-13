@@ -44,13 +44,15 @@ class About extends Component {
           <Row>
             <Col>
               <h1>More About Me</h1>
-              <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering &nbsp;&nbsp;</span>
-              <FontAwesomeIcon icon={faFlask} /><br></br>
-              <span>During free time, I enjoy coffee, art, TV series and explore delivious food &nbsp;&nbsp;</span>
-              <FontAwesomeIcon icon={faMugHot} /><p></p><p></p>
+              <div id="about_summary">
+                <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering &nbsp;&nbsp;</span>
+                <FontAwesomeIcon icon={faFlask} /><br></br>
+                <span>During free time, I enjoy coffee, art, TV series and explore delivious food &nbsp;&nbsp;</span>
+                <FontAwesomeIcon icon={faMugHot} /><p></p><p></p>
+              </div>
             </Col>
           </Row>
-          <Row>
+          <Row id="about_introduction">
             <Col className="font-left bold">
               <span>I am ...</span>
             </Col>
@@ -59,7 +61,7 @@ class About extends Component {
             </Col>
           </Row>
           <Row>
-            <Col className="font-left">
+            <Col className="font-left" id="about_left">
               <span>As a good machine learning engineer,</span><br></br>
               <span>not only modeling skills and the solid mathematics background, </span><br></br>
               <span>but also implementation skills and system design ability are crucial.</span><br></br>
@@ -105,7 +107,7 @@ class About extends Component {
             <Col className="padding-top">
               <h2>Experience</h2>
               <Nav.Link
-                href="https://drive.google.com/file/d/1i-D__LSGS7CEESDT0zOWp17QJRu69ELL/view?usp=sharing"
+                href="https://light0617.github.io/RESUME.pdf"
                 className=" name-logo">
                 Resume
               </Nav.Link>

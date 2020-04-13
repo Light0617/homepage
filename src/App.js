@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +9,9 @@ import 'font-awesome/css/font-awesome.min.css';
 class App extends Component {
   render() {
     return (
-      <Main/>
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
     );
   }
 }

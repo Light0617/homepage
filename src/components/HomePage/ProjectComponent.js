@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Container, Col, Nav } from 'react-bootstrap';
-import pic1 from '../assets/project-crypto.jpg'
-import pic2 from '../assets/project-tw.jpg'
-import pic3 from '../assets/project-style.jpg'
+import pic1 from '../../assets/project-crypto.jpg'
+import pic2 from '../../assets/project-tw.jpg'
+import pic3 from '../../assets/project-style.jpg'
 
 const project_link1 = "https://github.com/Light0617/CryptocurrencyDashboard";
 const project_link2 = "https://github.com/Light0617/CryptocurrencyDashboard";
@@ -20,7 +20,7 @@ class Project extends Component {
         </div>
         <Container>
           <Row>
-            <Col>
+            <Col id="project_intro_left">
               <h3 className='heading-tertiary u-margin-bottom-small'> Technical Blog</h3>
               <p className='paragraphe'>
                 As a software engineer, I am happy to share any technical stuff I faced before, 
@@ -34,7 +34,7 @@ class Project extends Component {
               </p>
               <a target="_blank" href='https://github.com/Light0617' className='btn-text'>Learn more &rarr;</a>
             </Col>
-            <Col>
+            <Col id="project_intro_right">
               <div className='composition'>
               <a target="_blank" href={project_link1}>
                 <img src={pic1} className='composition__photo composition__photo--p1'/>
@@ -45,9 +45,6 @@ class Project extends Component {
               <a target="_blank" href={project_link3}>
                 <img src={pic3} className='composition__photo composition__photo--p3'/>
               </a>
-                {/* <img src={pic1} alt='Photo 1' className='composition__photo composition__photo--p1' href="https://github.com/Light0617/CryptocurrencyDashboard" />
-                <img src={pic2} alt='Photo 2' className='composition__photo composition__photo--p2' />
-                <img src={pic3} alt='Photo 3' className='composition__photo composition__photo--p3' /> */}
               </div>
             </Col>
           </Row>

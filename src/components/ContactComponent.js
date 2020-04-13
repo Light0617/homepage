@@ -11,7 +11,7 @@ class Contact extends Component {
         <div className='u-center-text u-margin-bottom-big'>
           <h1>Contact</h1>
         </div>
-        <Row>
+        <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
           <Col>
             <div className='card'>
               <div className='card__side card__side--front'>
@@ -118,7 +118,6 @@ class Contact extends Component {
               </div>
             </div>
           </Col>
-
         </Row>
 
         <div className='u-center-text u-margin-top-huge'>

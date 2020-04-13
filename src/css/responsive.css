@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1026px) {
+  #about_left, #about_summary, #about_introduction {
+    display: none;
+  }
+  #blog_intro_right, #project_intro_right {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+
