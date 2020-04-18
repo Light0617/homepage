@@ -1,4 +1,6 @@
 @import "responsive.css"; 
+@import "book.css";
+@import "course.css"; 
 
 .App {
   text-align: center;

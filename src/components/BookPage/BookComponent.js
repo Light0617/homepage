@@ -17,7 +17,7 @@ class Book extends Component {
         <Container>
           <Row>
             <Col>
-            <Card style={{ width: '18rem', height: '40rem'}}>
+            <Card className='book-card-style'>
               <Card.Img variant="top" src={pic1} className='book_cover' />
               <Card.Body>
                 <Card.Title>Thinking, fast and slow</Card.Title>
@@ -26,7 +26,7 @@ class Book extends Component {
             </Card>
             </Col>
             <Col>
-            <Card style={{ width: '18rem', height: '40rem' }}>
+            <Card className='book-card-style'>
               <Card.Img variant="top" src={pic2} className='book_cover'/>
               <Card.Body>
                 <Card.Title>Why nations fail</Card.Title>
@@ -35,7 +35,7 @@ class Book extends Component {
             </Card>
             </Col>
             <Col>
-            <Card style={{ width: '18rem', height: '40rem' }}>
+            <Card className='book-card-style'>
               <Card.Img variant="top" src={pic3} className='book_cover' />
               <Card.Body>
                 <Card.Title>Species</Card.Title>

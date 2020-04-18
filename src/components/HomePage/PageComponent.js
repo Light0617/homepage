@@ -6,6 +6,8 @@ import Project from './ProjectComponent';
 import Blog from './BlogComponent';
 import Contact from '../ContactComponent';
 
+import Book from '../BookPage/BookComponent';
+import Course from '../CoursePage/CourseComponent';
 
 class Home extends Component {
   render() {
@@ -17,6 +19,8 @@ class Home extends Component {
         <About />
         <Project />
         <Blog />
+        <Book />
+        <Course />
         <Contact/>
       </div>
     );
