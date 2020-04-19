@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Container, Col, Card, Tabs, Tab } from 'react-bootstrap';
+import { Row, Container, Col, Card, Tabs, Tab, CardColumns } from 'react-bootstrap';
 
 import sp1 from '../../assets/courses/specializations/deep_learning_cer.png'
 import sp2 from '../../assets/courses/specializations/Distributed_Programming.png'
@@ -81,43 +81,81 @@ const sp_link3 = 'https://www.coursera.org/specializations/software-design-archi
 const sp_link4 = 'https://www.coursera.org/specializations/google-golang'
 const sp_link5 = 'https://www.coursera.org/specializations/data-science-python'
 const sp_link6 = 'https://www.coursera.org/specializations/web-design'
+const sp_title1 = 'Depp Learning';
+const sp_title2 = 'Parallel, Concurrent, and Distributed Programming in Java';
+const sp_title3 = 'Software Design and Architecture';
+const sp_title4 = 'Programming with Golang';
+const sp_title5 = 'Applied Data Science with Python';
+const sp_title6 = 'Web Design';
 
-const ml_link1 = 'https://www.coursera.org/learn/machine-learning'
-const ml_link2 = 'https://www.coursera.org/learn/nlp-sequence-models'
-const ml_link3 = 'https://www.coursera.org/learn/machine-learning-projects'
-const ml_link4 = 'https://www.coursera.org/learn/convolutional-neural-networks'
-const ml_link5 = 'https://www.coursera.org/learn/deep-neural-network'
-const ml_link6 = 'https://www.coursera.org/learn/neural-networks-deep-learning'
-const ml_link7 = 'https://www.coursera.org/learn/rengong-zhineng'
-const ml_link8 = 'https://www.coursera.org/learn/matrix-factorization'
-const ml_link9 = 'https://www.coursera.org/learn/collaborative-filtering'
-const ml_link10 = 'https://www.coursera.org/learn/recommender-systems-introduction'
-const ml_link11 = 'https://www.coursera.org/learn/recommender-metrics'
+const ml_link1 = 'https://www.coursera.org/learn/machine-learning';
+const ml_link2 = 'https://www.coursera.org/learn/nlp-sequence-models';
+const ml_link3 = 'https://www.coursera.org/learn/machine-learning-projects';
+const ml_link4 = 'https://www.coursera.org/learn/convolutional-neural-networks';
+const ml_link5 = 'https://www.coursera.org/learn/deep-neural-network';
+const ml_link6 = 'https://www.coursera.org/learn/neural-networks-deep-learning';
+const ml_link7 = 'https://www.coursera.org/learn/rengong-zhineng';
+const ml_link8 = 'https://www.coursera.org/learn/matrix-factorization';
+const ml_link9 = 'https://www.coursera.org/learn/collaborative-filtering';
+const ml_link10 = 'https://www.coursera.org/learn/recommender-systems-introduction';
+const ml_link11 = 'https://www.coursera.org/learn/recommender-metrics';
+const ml_title1 = 'Machine Learning';
+const ml_title2 = 'Sequence Models';
+const ml_title3 = 'Structuring Machine Learning Projects';
+const ml_title4 = 'Convolutional Neural Networks';
+const ml_title5 = 'Improving Deep Neural Networks';
+const ml_title6 = 'Neural Networks and Deep Learning';
+const ml_title7 = 'Artificial Intelligence';
+const ml_title8 = 'Matrix Factorization';
+const ml_title9 = 'Nearest Neighbor Collaborative Filtering';
+const ml_title10 = 'Introduction to Recommender Systems: Non-Personalized and Content-Based';
+const ml_title11 = 'Recommender Systems: Evaluation Metrics';
 
-const sde_link1 = 'https://www.coursera.org/learn/golang-concurrency'
-const sde_link2 = 'https://www.coursera.org/learn/parallel-programming-in-java'
-const sde_link3 = 'https://www.coursera.org/learn/concurrent-programming-in-java'
-const sde_link4 = 'https://www.coursera.org/learn/distributed-programming-in-java'
-const sde_link5 = 'https://www.coursera.org/learn/progfun2'
-const sde_link6 = 'https://www.coursera.org/learn/golang-functions-methods'
-const sde_link7 = 'https://www.coursera.org/learn/scala-spark-big-data'
-const sde_link8 = 'https://www.coursera.org/learn/object-oriented-design'
-const sde_link9 = 'https://www.coursera.org/learn/golang-getting-started'
-const sde_link10 = 'https://www.coursera.org/learn/design-patterns'
-const sde_link11 = 'https://www.coursera.org/learn/gcp-fundamentals'
-const sde_link12 = 'https://www.coursera.org/learn/service-oriented-architecture'
-const sde_link13 = 'https://www.coursera.org/learn/software-architecture'
+const sde_link1 = 'https://www.coursera.org/learn/golang-concurrency';
+const sde_link2 = 'https://www.coursera.org/learn/parallel-programming-in-java';
+const sde_link3 = 'https://www.coursera.org/learn/concurrent-programming-in-java';
+const sde_link4 = 'https://www.coursera.org/learn/distributed-programming-in-java';
+const sde_link5 = 'https://www.coursera.org/learn/progfun2';
+const sde_link6 = 'https://www.coursera.org/learn/golang-functions-methods';
+const sde_link7 = 'https://www.coursera.org/learn/scala-spark-big-data';
+const sde_link8 = 'https://www.coursera.org/learn/object-oriented-design';
+const sde_link9 = 'https://www.coursera.org/learn/golang-getting-started';
+const sde_link10 = 'https://www.coursera.org/learn/design-patterns';
+const sde_link11 = 'https://www.coursera.org/learn/gcp-fundamentals';
+const sde_link12 = 'https://www.coursera.org/learn/service-oriented-architecture';
+const sde_link13 = 'https://www.coursera.org/learn/software-architecture';
+const sde_title1 = 'Concurrency in Go';
+const sde_title2 = 'Parallel Programming in Java';
+const sde_title3 = 'Concurrent Programming in Java';
+const sde_title4 = 'Distributed Programming in Java';
+const sde_title5 = 'Functional Program Design Scala';
+const sde_title6 = 'Functions Methods Interfaces in Go';
+const sde_title7 = 'Big Data Analysis with Scala Spark';
+const sde_title8 = 'Object Oriented Design';
+const sde_title9 = 'Getting Started Go';
+const sde_title10 = 'Design Patterns';
+const sde_title11 = 'Google Cloud Platform Fundamentals';
+const sde_title12 = 'Service Oriented Architecture';
+const sde_title13 = 'Software Architecture';
 
-
-const web_link1 = 'https://www.coursera.org/learn/front-end-react'
-const web_link2 = 'https://www.coursera.org/learn/server-side-nodejs'
-const web_link3 = 'https://www.coursera.org/learn/angular'
-const web_link4 = 'https://www.coursera.org/learn/bootstrap-4'
-const web_link5 = 'https://www.coursera.org/learn/responsivedesign'
-const web_link6 = 'https://www.coursera.org/learn/javascript'
-const web_link7 = 'https://www.coursera.org/learn/introcss'
-const web_link8 = 'https://www.coursera.org/learn/web-design-project'
-const web_link9 = 'https://www.coursera.org/learn/html'
+const web_link1 = 'https://www.coursera.org/learn/front-end-react';
+const web_link2 = 'https://www.coursera.org/learn/server-side-nodejs';
+const web_link3 = 'https://www.coursera.org/learn/angular';
+const web_link4 = 'https://www.coursera.org/learn/bootstrap-4';
+const web_link5 = 'https://www.coursera.org/learn/responsivedesign';
+const web_link6 = 'https://www.coursera.org/learn/javascript';
+const web_link7 = 'https://www.coursera.org/learn/introcss';
+const web_link8 = 'https://www.coursera.org/learn/web-design-project';
+const web_link9 = 'https://www.coursera.org/learn/html';
+const web_title1 = 'Front-End WebDevelopment with React';
+const web_title2 = 'Server-side Development';
+const web_title3 = 'Front-End WebDevelopment with Angular';
+const web_title4 = 'Bootstrap4';
+const web_title5 = 'Advanced Styling with Responsive Design';
+const web_title6 = 'Interactivity with JavaScript';
+const web_title7 = 'CSS3';
+const web_title8 = 'Web Design for Everybody Capstone';
+const web_title9 = 'Introduction to HTML5';
 
 const cs_link1 = 'https://www.coursera.org/learn/algorithms-on-graphs'
 const cs_link2 = 'https://www.coursera.org/learn/advanced-data-structures'
@@ -129,6 +167,16 @@ const cs_link7 = 'https://www.coursera.org/learn/algorithmic-toolbox'
 const cs_link8 = 'https://www.coursera.org/learn/data-structures'
 const cs_link9 = 'https://www.coursera.org/learn/big-data-introduction'
 const cs_link10 = 'https://www.coursera.org/learn/cs-tech-interview?specialization=java-object-oriented'
+const cs_title1 = 'Algorithms On Graphs';
+const cs_title2 = 'Advanced Data Structures in Java';
+const cs_title3 = 'Algorithms on Strings';
+const cs_title4 = 'Data Structures and Performance';
+const cs_title5 = 'Object Oriented Programming in Java';
+const cs_title6 = 'Hadoop Platform and Application Framework';
+const cs_title7 = 'Algorithmic Toolbox';
+const cs_title8 = 'Data Structures';
+const cs_title9 = 'Introduction to Big Data';
+const cs_title10 = 'Mastering the Software Engineering Interview';
 
 const da_link1 = 'https://www.coursera.org/learn/python-machine-learning'
 const da_link2 = 'https://www.coursera.org/learn/python-social-network-analysis'
@@ -148,185 +196,181 @@ const da_link15 = 'https://www.coursera.org/learn/reproducible-research'
 const da_link16 = 'https://www.coursera.org/learn/data-scientists-tools'
 const da_link17 = 'https://www.coursera.org/learn/python-network-data'
 
-const other_link1 = 'https://www.coursera.org/learn/developmental-psychology?courseAccomplishmentCurrentPage=1&coursesWithoutCertificateCurrentPage=2'
+const other_link1 = 'https://www.coursera.org/learn/developmental-psychology?courseAccomplishmentCurrentPage=1&coursesWithoutCertificateCurrentPage=2';
 
 function CourseCard(props) {
   return (
-    <Col xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
-      <Card className='course-card-style'>
-        <Card.Img variant="top" src={props.img} className='course_cover' />
-        <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Link target='_blank' href={props.link}>course</Card.Link>
-        </Card.Body>
-      </Card>
+    <Col>
+      <div className='card'>
+        <div className='card__side'>
+          <img src={props.img} className='card-img'/>
+          <div className='card__details'>
+            <ul>
+              <li>{props.title}</li>
+              <li><a target="_blank"  href={props.link} className='btn btn--blue'>Course</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </Col>
-  );
+  )
 }
 
 function Specialization() {
     return (
-      <Container>
-          <Row>
-            <CourseCard img = {sp1} title = 'Deep Learning' link= {sp_link1}/>
-            <CourseCard img = {sp2} title = 'Parallel, Concurrent, and Distributed Programming in Java' link= {sp_link2}/>
-            <CourseCard img = {sp3} title = 'Software Design and Architecture' link= {sp_link3}/>
-          </Row>
-          <Row className='padding-top'>
-            <CourseCard img = {sp4} title = 'Programming with Golang' link= {sp_link4}/>
-            <CourseCard img = {sp5} title = 'Applied Data Science with Python' link= {sp_link5}/>
-            <CourseCard img = {sp6} title = 'Web Design' link= {sp_link6}/>
-          </Row>
-        </Container>
+      <div className='div-center'>
+        <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+          <CourseCard img = {sp1} title = {sp_title1} link= {sp_link1}/>
+          <CourseCard img = {sp2} title = {sp_title2} link= {sp_link2}/>
+          <CourseCard img = {sp3} title = {sp_title3} link= {sp_link3}/>
+          <CourseCard img = {sp4} title = {sp_title4} link= {sp_link4}/>
+        </Row>
+        <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+          <CourseCard img = {sp5} title = {sp_title5} link= {sp_link5}/>
+          <CourseCard img = {sp6} title = {sp_title6} link= {sp_link6}/>
+        </Row>
+      </div>
     );
 }
 
 function ML_courses() {
   return (
-    <Container>
-        <Row>
-          <CourseCard img = {ml1} title = 'Machine Learning' link= {ml_link1}/>
-          <CourseCard img = {ml2} title = 'Sequence Models' link= {ml_link2}/>
-          <CourseCard img = {ml3} title = 'Structuring Machine Learning Projects' link= {ml_link3}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {ml4} title = 'Convolutional Neural Networks' link= {ml_link4}/>
-          <CourseCard img = {ml5} title = 'Improving Deep Neural Networks' link= {ml_link5}/>
-          <CourseCard img = {ml6} title = 'Neural Networks and Deep Learning' link= {ml_link6}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {ml7} title = 'Artificial Intelligence' link= {ml_link7}/>
-          <CourseCard img = {ml8} title = 'Matrix Factorization' link= {ml_link8}/>
-          <CourseCard img = {ml9} title = 'Nearest Neighbor Collaborative Filtering' link= {ml_link9}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {ml10} title = 'Recommendation Systems with Non-Personalizedand Content-Based' link= {ml_link10}/>
-          <CourseCard img = {ml11} title = 'Recommender Systems: Evaluation Metrics' link= {ml_link11}/>
-        </Row>
-      </Container>
+    <div className='div-center'>
+      <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+        <CourseCard img = {ml1} title = {ml_title1} link= {ml_link1}/>
+        <CourseCard img = {ml2} title = {ml_title2} link= {ml_link2}/>
+        <CourseCard img = {ml3} title = {ml_title3} link= {ml_link3}/>
+        <CourseCard img = {ml4} title = {ml_title4} link= {ml_link4}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {ml5} title = {ml_title5} link= {ml_link5}/>
+        <CourseCard img = {ml6} title = {ml_title6} link= {ml_link6}/>
+        <CourseCard img = {ml7} title = {ml_title7} link= {ml_link7}/>
+        <CourseCard img = {ml8} title = {ml_title8} link= {ml_link8}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {ml9} title = {ml_title9} link= {ml_link9}/>
+        <CourseCard img = {ml10} title = {ml_title10} link= {ml_link10}/>
+        <CourseCard img = {ml11} title = {ml_title11} link= {ml_link11}/>
+      </Row>
+    </div>
   );
 }
 
 function SDE_courses() {
   return (
-    <Container>
-        <Row>
-          <CourseCard img = {sde1} title = 'Concurrency in Go' link= {sde_link1}/>
-          <CourseCard img = {sde2} title = 'Parallel Programming in Java' link= {sde_link2}/>
-          <CourseCard img = {sde3} title = 'Concurrent Programming in Java' link= {sde_link3}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {sde4} title = 'Distributed Programming in Java' link= {sde_link4}/>
-          <CourseCard img = {sde5} title = 'Functional Program Design Scala' link= {sde_link5}/>
-          <CourseCard img = {sde6} title = 'Functions Methods Interfaces in Go' link= {sde_link6}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {sde7} title = 'Big Data Analysis with Scala Spark' link= {sde_link7}/>
-          <CourseCard img = {sde8} title = 'Object Oriented Design' link= {sde_link8}/>
-          <CourseCard img = {sde9} title = 'Getting Started Go' link= {sde_link9}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {sde10} title = 'Design Patterns' link= {sde_link10}/>
-          <CourseCard img = {sde11} title = 'Google Cloud Platform Fundamentals' link= {sde_link11}/>
-          <CourseCard img = {sde12} title = 'Service Oriented Architecture' link= {sde_link12}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {sde13} title = 'Software Architecture' link= {sde_link13}/>
-        </Row>
-      </Container>
+    <div className='div-center'>
+      <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+        <CourseCard img = {sde1} title = {sde_title1} link= {sde_link1}/>
+        <CourseCard img = {sde2} title = {sde_title2} link= {sde_link2}/>
+        <CourseCard img = {sde3} title = {sde_title3} link= {sde_link3}/>
+        <CourseCard img = {sde4} title = {sde_title4} link= {sde_link4}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {sde5} title = {sde_title5} link= {sde_link5}/>
+        <CourseCard img = {sde6} title = {sde_title6} link= {sde_link6}/>
+        <CourseCard img = {sde7} title = {sde_title7} link= {sde_link7}/>
+        <CourseCard img = {sde8} title = {sde_title8} link= {sde_link8}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {sde9} title = {sde_title9} link= {sde_link9}/>
+        <CourseCard img = {sde10} title = {sde_title10} link= {sde_link10}/>
+        <CourseCard img = {sde11} title = {sde_title11} link= {sde_link11}/>
+        <CourseCard img = {sde12} title = {sde_title12} link= {sde_link12}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {sde13} title = {sde_title13} link= {sde_link13}/>
+      </Row>
+    </div>
   );
 }
 
 function Web_courses() {
   return (
-    <Container>
-        <Row>
-          <CourseCard img = {web1} title = 'Front-End WebDevelopment with React' link= {web_link1}/>
-          <CourseCard img = {web2} title = 'Server-side Development' link= {web_link2}/>
-          <CourseCard img = {web3} title = 'Front-End WebDevelopment with Angular' link= {web_link3}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {web4} title = 'Bootstrap4' link= {web_link4}/>
-          <CourseCard img = {web5} title = 'Advanced Styling with Responsive Design' link= {web_link5}/>
-          <CourseCard img = {web6} title = 'Interactivity with JavaScript' link= {web_link6}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {web7} title = 'CSS3' link= {web_link7}/>
-          <CourseCard img = {web8} title = 'Web Design for Everybody Capstone' link= {web_link8}/>
-          <CourseCard img = {web9} title = 'Introduction to HTML5' link= {web_link9}/>
-        </Row>
-      </Container>
+    <div className='div-center'>
+      <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+        <CourseCard img = {web1} title = {web_title1} link= {web_link1}/>
+        <CourseCard img = {web2} title = {web_title2} link= {web_link2}/>
+        <CourseCard img = {web3} title = {web_title3} link= {web_link3}/>
+        <CourseCard img = {web4} title = {web_title4} link= {web_link4}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {web5} title = {web_title5} link= {web_link5}/>
+        <CourseCard img = {web6} title = {web_title6} link= {web_link6}/>
+        <CourseCard img = {web7} title = {web_title7} link= {web_link7}/>
+        <CourseCard img = {web8} title = {web_title8} link= {web_link8}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {web9} title = {web_title9} link= {web_link9}/>
+      </Row>
+    </div>
   );
 }
 
 function CS_courses() {
   return (
-    <Container>
-        <Row>
-          <CourseCard img = {cs1} title = 'Algorithms On Graphs' link= {cs_link1}/>
-          <CourseCard img = {cs2} title = 'Advanced Data Structures in Java' link= {cs_link2}/>
-          <CourseCard img = {cs3} title = 'Algorithms on Strings' link= {cs_link3}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {cs4} title = 'Data Structures and Performance' link= {cs_link4}/>
-          <CourseCard img = {cs5} title = 'Object Oriented Programming in Java' link= {cs_link5}/>
-          <CourseCard img = {cs6} title = 'Hadoop Platform and Application Framework' link= {cs_link6}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {cs7} title = 'Algorithmic Toolbox' link= {cs_link7}/>
-          <CourseCard img = {cs8} title = 'Data Structures' link= {cs_link8}/>
-          <CourseCard img = {cs9} title = 'Introduction to Big Data' link= {cs_link9}/>
-        </Row>
-        <Row className='padding-top'>
-          <CourseCard img = {cs10} title = 'Mastering the Software Engineering Interview' link= {cs_link10}/>
-        </Row>
-      </Container>
+    <div className='div-center'>
+      <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+        <CourseCard img = {cs1} title = {cs_title1} link= {cs_link1}/>
+        <CourseCard img = {cs2} title = {cs_title2} link= {cs_link2}/>
+        <CourseCard img = {cs3} title = {cs_title3} link= {cs_link3}/>
+        <CourseCard img = {cs4} title = {cs_title4} link= {cs_link4}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {cs5} title = {cs_title5} link= {cs_link5}/>
+        <CourseCard img = {cs6} title = {cs_title6} link= {cs_link6}/>
+        <CourseCard img = {cs7} title = {cs_title7} link= {cs_link7}/>
+        <CourseCard img = {cs8} title = {cs_title8} link= {cs_link8}/>
+      </Row>
+      <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+        <CourseCard img = {cs9} title = {cs_title9} link= {cs_link9}/>
+        <CourseCard img = {cs10} title = {cs_title10} link= {cs_link10}/>
+      </Row>
+    </div>
   );
 }
 
 function DA_courses() {
   return (
-    <Container>
-        <Row>
+    <div className='div-center'>
+        <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
           <CourseCard img = {da1} title = 'Applied Machine Learning in Python' link= {da_link1}/>
           <CourseCard img = {da2} title = 'Applied Social Network Analysis in Python' link= {da_link2}/>
           <CourseCard img = {da3} title = 'Applied Text Mining in Python' link= {da_link3}/>
-        </Row>
-        <Row className='padding-top'>
           <CourseCard img = {da4} title = 'Practical Machine Learning' link= {da_link4}/>
+        </Row>
+        <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
           <CourseCard img = {da5} title = 'Statistical Inference' link= {da_link5}/>
           <CourseCard img = {da6} title = 'Regression Models' link= {da_link6}/>
-        </Row>
-        <Row className='padding-top'>
           <CourseCard img = {da7} title = 'Using Databases with Python' link= {da_link7}/>
           <CourseCard img = {da8} title = 'Python Data Structures' link= {da_link8}/>
-          <CourseCard img = {da9} title = 'Applied Plot' link= {da_link9}/>
         </Row>
-        <Row className='padding-top'>
+        <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+          <CourseCard img = {da9} title = 'Applied Plot' link= {da_link9}/>
           <CourseCard img = {da10} title = 'Exploratory Data Analysis' link= {da_link10}/>
           <CourseCard img = {da11} title = 'Getting and Cleaning Data' link= {da_link11}/>
           <CourseCard img = {da12} title = 'Introduction to Data Science in Python' link= {da_link12}/>
         </Row>
-        <Row className='padding-top'>
+        <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
           <CourseCard img = {da13} title = 'Programming for Everybody' link= {da_link13}/>
           <CourseCard img = {da14} title = 'R Programming' link= {da_link14}/>
           <CourseCard img = {da15} title = 'Reproducible Research' link= {da_link15}/>
-        </Row>
-        <Row className='padding-top'>
           <CourseCard img = {da16} title = 'The Data Scientist’s Toolbox' link= {da_link16}/>
+        </Row>
+        <Row xl="4" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
           <CourseCard img = {da17} title = 'Using Python to Access Web Data' link= {da_link17}/>
         </Row>
-      </Container>
+      </div>
   );
 }
 
 function OTHER_courses() {
   return (
-    <Container>
-        <Row>
-          <CourseCard img = {other1} title = 'Developmental Psychology' link= {other_link1}/>
-        </Row>
-      </Container>
+    <div className='div-center'>
+      <Row xl="4" lg="2" md="2" sm="1" className="hidden-xs-down">
+        <CourseCard img = {other1} title = 'Developmental Psychology' link= {other_link1}/>
+      </Row>
+    </div>
   );
 }
 

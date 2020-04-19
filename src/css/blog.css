@@ -1,0 +1,10 @@
+
+.blog-card-row-style {
+  padding-left: 2rem;
+}
+.card.blog-card-style {
+  text-align: left;
+  width: 18rem;
+  height: 20rem;
+  background-color: rgba(232, 191, 238, 0.2);
+}

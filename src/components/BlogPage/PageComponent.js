@@ -12,7 +12,7 @@ class Page extends Component {
          <div className='header-style blog-header-background' id='blog_header'>
           <Header />
          </div>
-        {/* <Blog /> */}
+        <Blog/>
         <Contact/>
       </div>
     );

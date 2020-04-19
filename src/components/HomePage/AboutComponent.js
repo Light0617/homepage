@@ -47,7 +47,7 @@ class About extends Component {
               <div id="about_summary">
                 <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering &nbsp;&nbsp;</span>
                 <FontAwesomeIcon icon={faFlask} /><br></br>
-                <span>During free time, I enjoy coffee, art, TV series and explore delivious food &nbsp;&nbsp;</span>
+                <span>During free time, I enjoy coffee, art, TV series and explore delicious food &nbsp;&nbsp;</span>
                 <FontAwesomeIcon icon={faMugHot} /><p></p><p></p>
               </div>
             </Col>
@@ -69,7 +69,7 @@ class About extends Component {
               <span>keep sharpening coding, reading modeling papers.</span><p></p>
 
               <span>In a daily machine learning engineer in Yelp,</span><br></br>
-              <span>besides hard skills, we also have to write down documentation and dicuss ideas with teamamtes and persuade people to develop the project.</span><br></br>
+              <span>besides hard skills, we also have to write down documentation and dicuss ideas with teammates and persuade people to develop the project.</span><br></br>
               <span></span><br></br>
             </Col>
             <Col className="font-left">

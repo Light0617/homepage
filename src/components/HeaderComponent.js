@@ -22,8 +22,8 @@ class Header extends Component {
             <Nav.Link href="#book" className="text-uppercase grey-font-color">book</Nav.Link>
             <Nav.Link href="#course" className="text-uppercase grey-font-color">course</Nav.Link> */}
             <NavLink to="/blog" className="nav-link text-uppercase grey-font-color">blog</NavLink>
-            <NavLink to="/book" className="nav-link text-uppercase grey-font-color">book</NavLink>
             <NavLink to="/course" className="nav-link text-uppercase grey-font-color">course</NavLink>
+            <NavLink to="/book" className="nav-link text-uppercase grey-font-color">book</NavLink>
             {/* <Nav.Link href="#contact" className="text-uppercase grey-font-color">contact</Nav.Link> */}
           </Navbar.Collapse>
         </Navbar>

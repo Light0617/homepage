@@ -15,33 +15,33 @@ class Main extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <TransitionGroup>
-          <CSSTransition key={this.props.location.key} classNames="page" timeout={250}>
-            <Switch location={this.props.location}>
-              <Route exact path='/' component={Home} />
-              <Route path='/blog' component={BlogPage} />
-              <Route path='/book' component={BookPage} />
-              <Route path='/course' component={CoursePage} />
-              {/* <Redirect to='/' /> */}
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
-      </div>
-
       // <div className="App">
       //   <TransitionGroup>
       //     <CSSTransition key={this.props.location.key} classNames="page" timeout={250}>
-      //       <HashRouter basename="/">
+      //       <Switch location={this.props.location}>
       //         <Route exact path='/' component={Home} />
       //         <Route path='/blog' component={BlogPage} />
       //         <Route path='/book' component={BookPage} />
       //         <Route path='/course' component={CoursePage} />
       //         {/* <Redirect to='/' /> */}
-      //       </HashRouter>
+      //       </Switch>
       //     </CSSTransition>
       //   </TransitionGroup>
       // </div>
+
+      <div className="App">
+        <TransitionGroup>
+          <CSSTransition key={this.props.location.key} classNames="page" timeout={250}>
+            <HashRouter basename="/">
+              <Route exact path='/' component={Home} />
+              <Route path='/blog' component={BlogPage} />
+              <Route path='/book' component={BookPage} />
+              <Route path='/course' component={CoursePage} />
+              <Redirect to='/' />
+            </HashRouter>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
     );
   }
 }
