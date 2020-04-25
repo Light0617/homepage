@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dac39266d84f473d181c6ce294427b5e",
+    "revision": "c4c1162aef313adb1e819a7aa58473c4",
     "url": "/homepage/index.html"
   },
   {
-    "revision": "7ffba5c29bc9228ef682",
+    "revision": "60e0b3c4ad2b53c7490d",
     "url": "/homepage/static/css/2.dad2bcc7.chunk.css"
   },
   {
-    "revision": "40b4239e3ed7f36a97bd",
-    "url": "/homepage/static/css/main.8626e14a.chunk.css"
+    "revision": "4f4bc1cc23600ff776fe",
+    "url": "/homepage/static/css/main.687c346e.chunk.css"
   },
   {
-    "revision": "7ffba5c29bc9228ef682",
-    "url": "/homepage/static/js/2.4a94c165.chunk.js"
+    "revision": "60e0b3c4ad2b53c7490d",
+    "url": "/homepage/static/js/2.75cc46de.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/homepage/static/js/2.4a94c165.chunk.js.LICENSE.txt"
+    "url": "/homepage/static/js/2.75cc46de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40b4239e3ed7f36a97bd",
-    "url": "/homepage/static/js/main.f4956e79.chunk.js"
+    "revision": "4f4bc1cc23600ff776fe",
+    "url": "/homepage/static/js/main.78110301.chunk.js"
   },
   {
     "revision": "bd83cd971e7f847a67f4",
@@ -328,8 +328,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homepage/static/media/book3.88f54219.jpg"
   },
   {
-    "revision": "2e5bfb1613bca46eaf0cc5e997b81d3d",
-    "url": "/homepage/static/media/course_header.2e5bfb16.jpg"
+    "revision": "e94f5e61ac94b6b2b98f1a0d38d2483b",
+    "url": "/homepage/static/media/course_header.e94f5e61.jpg"
   },
   {
     "revision": "8ef9bd3ecbbdb6dba7df1e885eaafbb1",
@@ -354,6 +354,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/homepage/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "092c3d39025cc67297df4b9cc1464589",
+    "url": "/homepage/static/media/kyoto.092c3d39.jpg"
   },
   {
     "revision": "19f9a22f45a15fbf80d420862bcadffb",
