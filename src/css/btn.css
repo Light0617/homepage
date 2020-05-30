@@ -45,11 +45,11 @@
 }
 
 .btn--blue {
-  background-color: rgb(191, 232, 238);
+  background-color: rgb(91, 202, 219);
   color: #fff;
 }
 .btn--blue::after {
-  background-color: rgb(191, 232, 238);
+  background-color: rgb(91, 202, 219);
 }
 
 .btn--white {
@@ -90,4 +90,8 @@
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0);
+}
+
+.btn.contact-btn {
+  font-size: 1.3rem;
 }

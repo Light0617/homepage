@@ -2,3 +2,24 @@
   width: 18rem;
   height: 30rem;
 }
+.blog-card-row-style {
+  padding-left: 2rem;
+}
+
+.course-btn.btn:link {
+  padding: 1rem 1rem;
+}
+.course-title {
+  padding: 0rem;
+  font-size: 0.1rem;
+}
+.course-title.card__details {
+  padding: 0rem;
+  font-size: 0.1rem;
+}
+.card.course-card-style {
+  text-align: left;
+  width: 18rem;
+  height: 20rem;
+  background-color: rgba(70, 225, 236, 0.1);
+}

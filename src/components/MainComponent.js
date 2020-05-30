@@ -7,7 +7,7 @@ import Home from './HomePage/PageComponent';
 import BlogPage from './BlogPage/PageComponent';
 import BookPage from './BookPage/PageComponent';
 import CoursePage from './CoursePage/PageComponent';
-
+import PaperPage from './PaperPage/PageComponent';
 
 class Main extends Component {
   constructor(props) {
@@ -34,6 +34,7 @@ class Main extends Component {
           <CSSTransition key={this.props.location.key} classNames="page" timeout={250}>
             <HashRouter basename="/">
               <Route exact path='/' component={Home} />
+              <Route path='/paper' component={PaperPage} />
               <Route path='/blog' component={BlogPage} />
               <Route path='/book' component={BookPage} />
               <Route path='/course' component={CoursePage} />

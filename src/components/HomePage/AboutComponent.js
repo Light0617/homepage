@@ -82,16 +82,16 @@ class About extends Component {
                 <Col>{stars2} &nbsp;&nbsp;85 <p/></Col>
               </Row>
               <Row>
+                <Col className="bold">deep learning (NLP):</Col>
+                <Col>{stars5} &nbsp;&nbsp;80 <p/></Col>
+              </Row>
+              <Row>
                 <Col className="bold">deep learning (CV):</Col>
-                <Col>{stars3} &nbsp;&nbsp;75 <p/></Col>
+                <Col>{stars3} &nbsp;&nbsp;70 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Statistics:</Col>
                 <Col>{stars4} &nbsp;&nbsp;80 <p/></Col>
-              </Row>
-              <Row>
-                <Col className="bold">deep learning (NLP):</Col>
-                <Col>{stars5} &nbsp;&nbsp;70 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">full-stack engineering:</Col>
@@ -107,7 +107,7 @@ class About extends Component {
             <Col className="padding-top">
               <h2>Experience</h2>
               <Nav.Link
-                href="https://light0617.github.io/RESUME.pdf"
+                href="https://drive.google.com/open?id=1GEbxXPFUEokbp7ftDhT8g9CTiara6e78"
                 className=" name-logo">
                 Resume
               </Nav.Link>

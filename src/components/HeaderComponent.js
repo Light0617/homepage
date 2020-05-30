@@ -8,8 +8,9 @@ class Header extends Component {
   }
   render() {
     return (
+      <div>
       <Nav defaultActiveKey="/" as="ul" className="white-font-color">
-        <Nav.Link href="/" className="grey-font-color name-logo">KuangHsuan Lee</Nav.Link>
+        <Nav.Link href="/" className="grey-font-color name-logo nav-link active">KuangHsuan Lee</Nav.Link>
         <Nav className="mr-auto">
         </Nav>
         <Navbar expand="lg">
@@ -21,6 +22,7 @@ class Header extends Component {
             <Nav.Link href="#blog" className="text-uppercase grey-font-color">blog</Nav.Link>
             <Nav.Link href="#book" className="text-uppercase grey-font-color">book</Nav.Link>
             <Nav.Link href="#course" className="text-uppercase grey-font-color">course</Nav.Link> */}
+            <NavLink to="/paper" className="nav-link text-uppercase grey-font-color">paper</NavLink>
             <NavLink to="/blog" className="nav-link text-uppercase grey-font-color">blog</NavLink>
             <NavLink to="/course" className="nav-link text-uppercase grey-font-color">course</NavLink>
             <NavLink to="/book" className="nav-link text-uppercase grey-font-color">book</NavLink>
@@ -28,6 +30,27 @@ class Header extends Component {
           </Navbar.Collapse>
         </Navbar>
       </Nav>
+      <div className="home-cover-content">
+          <p>
+            K.H. Lee,
+          <br/>Machine Learning Engineer &nbsp;
+          <span className="fa fa-yelp fa-lg"></span>
+          <br/>@San Francisco.
+          </p>  
+          <a className="icon-style" target="_blank" href="https://www.linkedin.com/in/khl1147/">
+            <span className="fa fa-linkedin fa-lg"></span>
+          </a>
+          <a className="icon-style" target="_blank" href="https://github.com/Light0617/">
+            <span className="fa fa-github fa-lg"></span>
+          </a>
+          <a className="icon-style" target="_blank" href="https://www.facebook.com/kuanghsuan.lee.3">
+            <span className="fa fa-facebook fa-lg"></span>
+          </a>
+          <a className="icon-style" target="_blank" href="https://www.instagram.com/arthurnone6406/?hl=en">
+            <span className="fa fa-instagram fa-lg"></span>
+          </a>
+      </div>
+      </div>
     )
   }
 
