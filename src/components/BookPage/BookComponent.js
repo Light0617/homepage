@@ -11,26 +11,15 @@ const title3 = 'Species';
 function BookCard(props) {
   return (
     <Col>
-    <Card className="blog-card-style">
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Img variant="bottom" src={props.img} className="b-card-img" />
-      </Card.Body>
-      <Card.Body>
-        <Card.Link href={props.link} disabled>Blog</Card.Link>
-      </Card.Body>
-    </Card>
-      {/* <div className='blog-card-style card'>
-        <div className='card__side'>
-          <img src={props.img} className='card-img'/>
-          <div className='card__details'>
-            <ul>
-              <li>{props.title}</li>
-              <li><a target="_blank"  href={props.link} className='btn btn--blue disabled'>Blog</a></li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
+      <Card className="blog-card-style">
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Img variant="bottom" src={props.img} className="b-card-img" />
+        </Card.Body>
+        <Card.Body>
+          <Nav.Link href={props.link} disabled>Blog</Nav.Link>
+        </Card.Body>
+      </Card>
     </Col>
   )
 }
@@ -48,9 +37,9 @@ class Book extends Component {
           </div>
           <div className='div-center'>
             <Row xl="3" lg="2" md="2" sm="1">
-              <BookCard img = {pic1} title = {title1} link= '#disabled'/>
-              <BookCard img = {pic2} title = {title2} link= '#disabled'/>
-              <BookCard img = {pic3} title = {title3} link= '#disabled'/>
+              <BookCard img={pic1} title={title1} link='#disabled' />
+              <BookCard img={pic2} title={title2} link='#disabled' />
+              <BookCard img={pic3} title={title3} link='#disabled' />
             </Row>
           </div>
         </Container>

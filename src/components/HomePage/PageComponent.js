@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
 import Header from '../HeaderComponent';
-import About from './AboutComponent';
-import Project from './ProjectComponent';
-import Blog from './BlogComponent';
 import Contact from '../ContactComponent';
 
-import Book from '../BookPage/BookComponent';
+import About from './AboutComponent';
+import Paper from '../PaperPage/PaperComponent';
 import Course from '../CoursePage/CourseComponent';
+import Project from './ProjectComponent';
 
 class Home extends Component {
   render() {
@@ -17,10 +16,9 @@ class Home extends Component {
           <Header />
         </div>
         <About />
-        <Project />
-        <Blog />
-        <Book />
+        <Paper />
         <Course />
+        <Project />
         <Contact/>
       </div>
     );

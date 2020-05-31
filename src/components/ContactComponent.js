@@ -54,7 +54,7 @@ class Contact extends Component {
                 </div>
                 <div className='card__side card__side--back card__side--back-1'>
                   <div className='card__cta'>
-                    <a target="_blank" href='https://www.linkedin.com/in/khl1147/' className='btn btn--white'> Let's Link!</a>
+                    <a target="_blank" href='https://www.linkedin.com/in/khl1147/' className='btn btn--white contact-btn'> Let's Link!</a>
                   </div>
                 </div>
               </div>
@@ -80,7 +80,7 @@ class Contact extends Component {
                 </div>
                 <div className='card__side card__side--back card__side--back-2'>
                   <div className='card__cta'>
-                    <a target="_blank" href='https://github.com/Light0617/' className='btn btn--white'> Let's Code!</a>
+                    <a target="_blank" href='https://github.com/Light0617/' className='btn btn--white contact-btn'> Let's Code!</a>
                   </div>
                 </div>
               </div>
@@ -107,7 +107,7 @@ class Contact extends Component {
                 </div>
                 <div className='card__side card__side--back card__side--back-3'>
                   <div className='card__cta'>
-                    <a target="_blank" href='https://www.facebook.com/kuanghsuan.lee.3?ref=bookmarks' className='btn btn--white'> Let's Connect!</a>
+                    <a target="_blank" href='https://www.facebook.com/kuanghsuan.lee.3?ref=bookmarks' className='btn btn--white contact-btn'> Let's Connect!</a>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ class Contact extends Component {
                 </div>
                 <div className='card__side card__side--back card__side--back-4'>
                   <div className='card__cta'>
-                    <a target="_blank" href='https://www.instagram.com/arthurnone6406/' className='btn btn--white'> Let's Ins!</a>
+                    <a target="_blank" href='https://www.instagram.com/arthurnone6406/' className='btn btn--white contact-btn'> Let's Ins!</a>
                   </div>
                 </div>
               </div>

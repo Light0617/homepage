@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from '../HeaderComponent';
-import Book from './CourseComponent';
+import Course from './CourseComponent';
 import Contact from '../ContactComponent';
 
 
@@ -12,7 +12,7 @@ class Page extends Component {
         <div className='header-style course-header-background' id='course_header'>
           <Header />
         </div>
-        <Book />
+        <Course />
         <Contact />
       </div>
     );
