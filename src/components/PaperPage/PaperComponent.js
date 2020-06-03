@@ -17,6 +17,8 @@ const recom9="https://medium.com/@arthurlee_73761/context-aware-event-recommenda
 const recom10="https://medium.com/@arthurlee_73761/recsys16-adaptive-personalized-diversity-for-visual-discovery-76d8c53f900e";
 const recom11="https://medium.com/@arthurlee_73761/recsys-16-local-item-item-models-for-top-n-recommendation-753555b5c1c";
 const recom12="https://medium.com/@arthurlee_73761/recsys-17-translation-based-recommendation-233900ae5219";
+const recom13="https://medium.com/@arthurlee_73761/recsys-17-modeling-the-assimilation-contrast-effects-in-online-product-rating-systems-debiasing-67f7d2ecc49d";
+
 
 const recom_title1="RecSys’07: Trust-aware recommender systems";
 const recom_title2="RecSys’10: Performance of recommender algorithms on top-n recommendation tasks";
@@ -30,6 +32,7 @@ const recom_title9="RecSys’15: Context-Aware Event Recommendation in Event-bas
 const recom_title10="RecSys’16: Adaptive, Personalized Diversity for Visual Discovery";
 const recom_title11="RecSys’16: Local Item-Item Models for Top-N Recommendation";
 const recom_title12="RecSys’17: Translation-based Recommendation";
+const recom_title13="RecSys’17: Modeling the Assimilation-Contrast Effects in Online Product Rating Systems: Debiasing and Recommendations";
 
 const nlp1="https://medium.com/@arthurlee_73761/coling14-deep-convolutional-neural-networks-for-sentiment-analysis-of-short-texts-c2d44182653d";
 const nlp2="https://medium.com/@arthurlee_73761/naacl19-utilizing-bert-for-aspect-based-sentiment-analysis-via-constructing-auxiliary-sentence-a80dd68866b2";
@@ -64,6 +67,7 @@ function RecommendationSystem() {
           <tr><td><BlogLink title={recom_title10} link={recom10}/></td></tr>
           <tr><td><BlogLink title={recom_title11} link={recom11}/></td></tr>
           <tr><td><BlogLink title={recom_title12} link={recom12}/></td></tr>
+          <tr><td><BlogLink title={recom_title13} link={recom13}/></td></tr>
         </tbody>
       </Table>
     </div>
@@ -108,7 +112,7 @@ class Paper extends Component {
             <Col className="font-left">
               <Row>
                 <Col className="bold">Recommendation system:</Col>
-                <Col>{stars1} &nbsp;&nbsp;11 <p/></Col>
+                <Col>{stars1} &nbsp;&nbsp;13 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Natural language processing:</Col>

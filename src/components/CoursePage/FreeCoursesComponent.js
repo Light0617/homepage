@@ -5,11 +5,14 @@ function DeepLearningCourses() {
   const hung_yi_ml_link="https://www.youtube.com/watch?v=CXgbekl66jc&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=1";
   const hung_yi_ml2_link="https://www.youtube.com/watch?v=XnyM3-xtxHs&list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4";
   const hung_yi_gan_link="https://www.youtube.com/watch?v=DQNNMiAP5lw&list=PLJV_el3uVTsMq6JEFPW35BCiOQTsoqwNw";
+  const standford_DeepMultiTask_link="https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5&fbclid=IwAR0e08Nw0cIl_Mv2v2z-XeCwNeNlO4dlTB3ZyUSwur6lStVydGwtcmVf-zs";
+  
   return (
     <div className='div-left'>
       <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml_link}>Machine Learning</a></h1>
       <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml2_link}>Next Step of Machine Learning</a></h1>
       <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_gan_link}>GAN</a></h1>
+      <h1>Stanford - <a className="card-link" target="_blank" href={standford_DeepMultiTask_link}>Multi-Task and Meta-Learning</a></h1>
     </div>
   );
 }
