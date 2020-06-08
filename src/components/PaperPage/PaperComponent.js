@@ -19,7 +19,6 @@ const recom11="https://medium.com/@arthurlee_73761/recsys-16-local-item-item-mod
 const recom12="https://medium.com/@arthurlee_73761/recsys-17-translation-based-recommendation-233900ae5219";
 const recom13="https://medium.com/@arthurlee_73761/recsys-17-modeling-the-assimilation-contrast-effects-in-online-product-rating-systems-debiasing-67f7d2ecc49d";
 
-
 const recom_title1="RecSys’07: Trust-aware recommender systems";
 const recom_title2="RecSys’10: Performance of recommender algorithms on top-n recommendation tasks";
 const recom_title3="RecSys’10: Multiverse Recommendation: N-dimensional Tensor Factorization for Context-aware Collaborative Filtering";
@@ -33,6 +32,17 @@ const recom_title10="RecSys’16: Adaptive, Personalized Diversity for Visual Di
 const recom_title11="RecSys’16: Local Item-Item Models for Top-N Recommendation";
 const recom_title12="RecSys’17: Translation-based Recommendation";
 const recom_title13="RecSys’17: Modeling the Assimilation-Contrast Effects in Online Product Rating Systems: Debiasing and Recommendations";
+
+const recom_title14="RecSys’18: HOP-Rec: High-Order Proximity for Implicit Recommendation";
+const recom_title15="RecSys’18: Impact of item consumption on assessment of recommendations in user studies";
+const recom_title16="RecSys’18: Generation Meets Recommendation: Proposing Novel Items for Groups of Users";
+const recom_title17="RecSys’18: Causal Embeddings for Recommendation";
+const recom14="https://medium.com/@arthurlee_73761/recsys-18-hop-rec-high-order-proximity-for-implicit-recommendation-d4da19403140";
+const recom15="https://medium.com/@arthurlee_73761/recsys-18-impact-of-item-consumption-on-assessment-of-recommendations-in-user-studies-b310ecd5dab2";
+const recom16="https://medium.com/@arthurlee_73761/recsys-18-generation-meets-recommendation-proposing-novel-items-for-groups-of-users-c39bbf1b4bdb";
+const recom17="https://medium.com/@arthurlee_73761/recsys-18-causal-embeddings-for-recommendation-57443e326002";
+
+
 
 const nlp1="https://medium.com/@arthurlee_73761/coling14-deep-convolutional-neural-networks-for-sentiment-analysis-of-short-texts-c2d44182653d";
 const nlp2="https://medium.com/@arthurlee_73761/naacl19-utilizing-bert-for-aspect-based-sentiment-analysis-via-constructing-auxiliary-sentence-a80dd68866b2";
@@ -67,7 +77,10 @@ function RecommendationSystem() {
           <tr><td><BlogLink title={recom_title10} link={recom10}/></td></tr>
           <tr><td><BlogLink title={recom_title11} link={recom11}/></td></tr>
           <tr><td><BlogLink title={recom_title12} link={recom12}/></td></tr>
-          <tr><td><BlogLink title={recom_title13} link={recom13}/></td></tr>
+          <tr><td><BlogLink title={recom_title14} link={recom14}/></td></tr>
+          <tr><td><BlogLink title={recom_title15} link={recom15}/></td></tr>
+          <tr><td><BlogLink title={recom_title16} link={recom16}/></td></tr>
+          <tr><td><BlogLink title={recom_title17} link={recom17}/></td></tr>
         </tbody>
       </Table>
     </div>
@@ -112,7 +125,7 @@ class Paper extends Component {
             <Col className="font-left">
               <Row>
                 <Col className="bold">Recommendation system:</Col>
-                <Col>{stars1} &nbsp;&nbsp;13 <p/></Col>
+                <Col>{stars1} &nbsp;&nbsp;17 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Natural language processing:</Col>
