@@ -382,7 +382,7 @@ function CourseraContent() {
     return (
         <Container>
             <div className='u-center-text u-margin-bottom-big'>
-                <h1>Course</h1>
+                <h1>Coursera</h1>
                 <h2>I completed 6 specializations and 61 courses.</h2>
             </div>
             <Tabs

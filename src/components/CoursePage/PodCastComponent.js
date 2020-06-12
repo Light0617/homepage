@@ -15,11 +15,12 @@ function Startup() {
   const acquired_link="https://www.acquired.fm/";
   const yc_link="https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg";
   const ihp_link="https://www.youtube.com/channel/UC10MbwdpwQh8hTfNirlu7iQ";
+  const crazy_invest_link="https://podcasts.apple.com/us/podcast/%E7%96%AF%E6%8A%95%E5%9C%88/id1088178402";
   return (
     <div className='div-left'>
       <h4>
         <a className="card-link" target="_blank" href={mastersofscale_link}><span>Masters of Scale with Reid Hoffman: </span></a> 
-        The talks about the growth of companies. They invited FB, Uber cofounders.</h4>
+        The talks about the growth of companies. They invited FB, Uber cofounders. Best!</h4>
       <h4>
         <a className="card-link" target="_blank" href={NPR_link}><span>How I Built This with Guy Raz: </span></a> 
         The talks about companies in Silicon Valley</h4>
@@ -53,6 +54,9 @@ function Startup() {
       <h4>
         <a className="card-link" target="_blank" href={ihp_link}><span>Internet History Podcast: </span></a> 
         a talk about how tech company developed products</h4>
+      <h4>
+        <a className="card-link" target="_blank" href={crazy_invest_link}><span>瘋投圈: </span></a> 
+        a talk about startup with deep knowledge and thinking</h4>
     </div>
   );
 }
@@ -189,7 +193,7 @@ function Other() {
     <div className='div-left'>
       <h4>
         <a className="card-link" target="_blank" href={tyler_link}><span>Conversations with Tyler</span></a>
-        A economist with top impact and talking about the change of the world. Best podcast.
+        A economist with top impact and talking about the change of the world. Best!
         </h4>
       <h4>
         <a className="card-link" target="_blank" href={mark_link}><span>Tech, Society with Mark Zuckerberg: </span></a> 
