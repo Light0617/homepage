@@ -9,10 +9,10 @@ function DeepLearningCourses() {
   
   return (
     <div className='div-left'>
-      <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml_link}>Machine Learning</a></h1>
-      <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml2_link}>Next Step of Machine Learning</a></h1>
-      <h1>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_gan_link}>GAN</a></h1>
-      <h1>Stanford - <a className="card-link" target="_blank" href={standford_DeepMultiTask_link}>Multi-Task and Meta-Learning</a></h1>
+      <h3>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml_link}>Machine Learning</a></h3>
+      <h3>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_ml2_link}>Next Step of Machine Learning</a></h3>
+      <h3>Hung-yi Lee NTU - <a className="card-link" target="_blank" href={hung_yi_gan_link}>GAN</a></h3>
+      <h3>Stanford - <a className="card-link" target="_blank" href={standford_DeepMultiTask_link}>Multi-Task and Meta-Learning</a></h3>
     </div>
   );
 }
@@ -22,13 +22,13 @@ function TechCourses() {
   const future_coding_link="https://futureofcoding.org/";
   return (
     <div className='div-left'>
-      <h1>How to Start a Startup - <a className="card-link" target="_blank" href={startup_link}>
+      <h3>How to Start a Startup - <a className="card-link" target="_blank" href={startup_link}>
         <span className="fa fa-external-link"></span>
-        </a></h1>
-      <h1>Hacker News - <a className="card-link" target="_blank" href={hacker_news_link}>
-      <span className="fa fa-external-link"></span></a></h1>
-      <h1>Future of Coding - <a className="card-link" target="_blank" href={future_coding_link}>
-      <span className="fa fa-external-link"></span></a></h1>
+        </a></h3>
+      <h3>Hacker News - <a className="card-link" target="_blank" href={hacker_news_link}>
+      <span className="fa fa-external-link"></span></a></h3>
+      <h3>Future of Coding - <a className="card-link" target="_blank" href={future_coding_link}>
+      <span className="fa fa-external-link"></span></a></h3>
     </div>
   );
 }
@@ -36,8 +36,8 @@ function FinanceCourses() {
   const billionaire_link="https://www.youtube.com/watch?v=dPlk6uwC6uk&t=11s&fbclid=IwAR3aV4u7GVvXXNENHxlPQb-0bc9k-YKQZDPcgrsl4qiegG1FyRy-lrPYEhs";
   return (
     <div className='div-left'>
-      <h1>Underccover Billionaire - <a className="card-link" target="_blank" href={billionaire_link}>
-        <span className="fa fa-external-link"></span></a></h1>
+      <h3>Underccover Billionaire - <a className="card-link" target="_blank" href={billionaire_link}>
+        <span className="fa fa-external-link"></span></a></h3>
     </div>
   );
 }
