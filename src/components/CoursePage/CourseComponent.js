@@ -9,10 +9,18 @@ class Book extends Component {
     super(props);
   }
   render() {
+    if (this.props.show_all) {
+      return (
+        <div id="course" className="blog-style">
+          <FreeCourses/>
+          <Podcasts/>
+          <CourseraCourses/>
+        </div>
+      )
+    }
     return (
       <div id="course" className="blog-style">
         <FreeCourses/>
-        <Podcasts/>
         <CourseraCourses/>
       </div>
     )

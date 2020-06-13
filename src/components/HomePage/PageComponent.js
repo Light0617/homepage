@@ -10,6 +10,7 @@ import Project from './ProjectComponent';
 
 class Home extends Component {
   render() {
+    const show_all_ = false;
     return (
       <div className="App">
         <div className='header-style home-header-background' id='home_header'>
@@ -17,7 +18,7 @@ class Home extends Component {
         </div>
         <About />
         <Paper />
-        <Course />
+        <Course show_all={show_all_}/>
         <Project />
         <Contact/>
       </div>

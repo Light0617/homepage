@@ -14,6 +14,14 @@ class Main extends Component {
     super(props);
   }
   render() {
+    const CoursePageContent = () => {
+      const show_all_ = true;
+      return (
+        <CoursePage 
+          show_all={show_all_}
+        />
+      );
+    }
     return (
       // <div className="App">
       //   <TransitionGroup>
@@ -37,7 +45,7 @@ class Main extends Component {
               <Route path='/paper' component={PaperPage} />
               <Route path='/blog' component={BlogPage} />
               <Route path='/book' component={BookPage} />
-              <Route path='/course' component={CoursePage} />
+              <Route path='/course' component={CoursePageContent} />
               <Redirect to='/' />
             </HashRouter>
           </CSSTransition>

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Container, Col, Nav, Card, Tabs, Tab, Button } from 'react-bootstrap';
-
-import pic1 from '../../assets/blog-tv.jpg'
-import pic2 from '../../assets/blog-art.jpg'
-import pic3 from '../../assets/blog-sde.jpg'
+import PodcastBlog from './PodcastBlogComponent';
 
 const bert_link1="https://text-machine-lab.github.io/blog/2020/bert-secrets/?utm_campaign=Thought%20Leadership&utm_content=122769302&utm_medium=social&utm_source=linkedin&hss_channel=lis-NG8w66b_uw";
 const bert_link2="https://medium.com/dair-ai/does-bert-actually-understand-language-550dd07f38d3";
@@ -83,34 +80,36 @@ function CareerGrowth() {
   );
 }
 
-function Life() {
-  return (
+function CollectedBlog() {
+  return(
     <Container>
-          <Row>
-            <Col id="blog_intro_left">
-              <h3 className='heading-tertiary u-margin-bottom-small'> Technical Blog</h3>
-              <p className='paragraphe'>
-                As a software engineer, I am happy to share any technical stuff I faced before, 
-                talk about some papers and online courses I love in the future. 
-              </p>
-              <h3 className='heading-tertiary u-margin-bottom-small'> Casual Blog</h3>
-              <p className='paragraphe'>
-                During leisure time, I am intersted in watching American TV Series,  
-                movie and Japanese Anime. In the future, I will write more about interview experience,
-                software engineer life in Silicon Valley.
-              </p>
-              <a target="_blank" href='/blog' className='btn-text'>Learn more &rarr;</a>
-            </Col>
-            <Col id="blog_intro_right">
-              <div className='composition'>
-                <img src={pic1} alt='Photo 1' className='composition__photo composition__photo--p1' />
-                <img src={pic2} alt='Photo 2' className='composition__photo composition__photo--p2' />
-                <img src={pic3} alt='Photo 3' className='composition__photo composition__photo--p3' />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-  );
+    <div className='u-center-text u-margin-bottom-big'>
+      <h2>I collect some my favorite blogs.</h2>
+    </div>
+    <Tabs
+      defaultActiveKey="home" transition={false} id="noanim-tab-example"
+    >
+      <Tab eventKey="home" title="Machine Learning">
+        <div className='u-center-text u-margin-bottom-big'>
+          <h1>Machine Learning Blogs</h1>
+          <MachineLearning/>
+        </div>
+      </Tab>
+      <Tab eventKey="ml" title="Infrastrucutre">
+      <div className='u-center-text u-margin-bottom-big'>
+      <h1>Infrastrucutre Blogs</h1>
+        <Infrastrucutre/>
+      </div>
+      </Tab>
+      <Tab eventKey="career" title="Career Growth">
+      <div className='u-center-text u-margin-bottom-big'>
+      <h1>Career Growth</h1>
+        <CareerGrowth/>
+      </div>
+      </Tab>
+    </Tabs> 
+    </Container>
+  )
 }
 
 class Blog extends Component {
@@ -120,41 +119,8 @@ class Blog extends Component {
   render() {
     return (
       <div id="course" className="blog-style">
-        <Container>
-        <div className='u-center-text u-margin-bottom-big'>
-          <h1>Blog</h1>
-          <h2>I collect some my favorite blogs.</h2>
-        </div>
-        <Tabs
-          defaultActiveKey="home" transition={false} id="noanim-tab-example"
-        >
-          <Tab eventKey="home" title="Machine Learning">
-            <div className='u-center-text u-margin-bottom-big'>
-              <h1>Machine Learning Blogs</h1>
-              <MachineLearning/>
-            </div>
-          </Tab>
-          <Tab eventKey="ml" title="Infrastrucutre">
-          <div className='u-center-text u-margin-bottom-big'>
-          <h1>Infrastrucutre Blogs</h1>
-            <Infrastrucutre/>
-          </div>
-          </Tab>
-          <Tab eventKey="career" title="Career Growth">
-          <div className='u-center-text u-margin-bottom-big'>
-          <h1>Career Growth</h1>
-            <CareerGrowth/>
-          </div>
-          </Tab>
-          <Tab eventKey="life" title="Life">
-          <div className='u-center-text u-margin-bottom-big'>
-            <h1>Casual Life</h1>
-            <Life/>
-          </div>
-          </Tab>
-        </Tabs>
-        </Container>
-        
+        <PodcastBlog/>
+        <CollectedBlog/>
       </div>
     )
   }
