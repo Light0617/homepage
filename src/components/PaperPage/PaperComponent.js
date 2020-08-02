@@ -37,10 +37,12 @@ const recom_title14="RecSys’18: HOP-Rec: High-Order Proximity for Implicit Rec
 const recom_title15="RecSys’18: Impact of item consumption on assessment of recommendations in user studies";
 const recom_title16="RecSys’18: Generation Meets Recommendation: Proposing Novel Items for Groups of Users";
 const recom_title17="RecSys’18: Causal Embeddings for Recommendation";
+const recom_title18="RecSys’19: Pace My Race: Recommendations for Marathon Running";
 const recom14="https://medium.com/@arthurlee_73761/recsys-18-hop-rec-high-order-proximity-for-implicit-recommendation-d4da19403140";
 const recom15="https://medium.com/@arthurlee_73761/recsys-18-impact-of-item-consumption-on-assessment-of-recommendations-in-user-studies-b310ecd5dab2";
 const recom16="https://medium.com/@arthurlee_73761/recsys-18-generation-meets-recommendation-proposing-novel-items-for-groups-of-users-c39bbf1b4bdb";
 const recom17="https://medium.com/@arthurlee_73761/recsys-18-causal-embeddings-for-recommendation-57443e326002";
+const recom18="https://medium.com/@arthurlee_73761/recsys-19-pace-my-race-recommendations-for-marathon-running-cf2fed42be97";
 
 
 
@@ -65,22 +67,24 @@ function RecommendationSystem() {
     <div className="div-left">
       <Table striped bordered hover>
         <tbody>
-          <tr><td><BlogLink title={recom_title1} link={recom1}/></td></tr>
-          <tr><td><BlogLink title={recom_title2} link={recom2}/></td></tr>
-          <tr><td><BlogLink title={recom_title3} link={recom3}/></td></tr>
-          <tr><td><BlogLink title={recom_title4} link={recom4}/></td></tr>
-          <tr><td><BlogLink title={recom_title5} link={recom5}/></td></tr>
-          <tr><td><BlogLink title={recom_title6} link={recom6}/></td></tr>
-          <tr><td><BlogLink title={recom_title7} link={recom7}/></td></tr>
-          <tr><td><BlogLink title={recom_title8} link={recom8}/></td></tr>
-          <tr><td><BlogLink title={recom_title9} link={recom9}/></td></tr>
-          <tr><td><BlogLink title={recom_title10} link={recom10}/></td></tr>
-          <tr><td><BlogLink title={recom_title11} link={recom11}/></td></tr>
-          <tr><td><BlogLink title={recom_title12} link={recom12}/></td></tr>
-          <tr><td><BlogLink title={recom_title14} link={recom14}/></td></tr>
-          <tr><td><BlogLink title={recom_title15} link={recom15}/></td></tr>
-          <tr><td><BlogLink title={recom_title16} link={recom16}/></td></tr>
+          <tr><td><BlogLink title={recom_title18} link={recom18}/></td></tr>
           <tr><td><BlogLink title={recom_title17} link={recom17}/></td></tr>
+          <tr><td><BlogLink title={recom_title16} link={recom16}/></td></tr>
+          <tr><td><BlogLink title={recom_title15} link={recom15}/></td></tr>
+          <tr><td><BlogLink title={recom_title14} link={recom14}/></td></tr>
+          <tr><td><BlogLink title={recom_title13} link={recom13}/></td></tr>
+          <tr><td><BlogLink title={recom_title12} link={recom12}/></td></tr>
+          <tr><td><BlogLink title={recom_title11} link={recom11}/></td></tr>
+          <tr><td><BlogLink title={recom_title10} link={recom10}/></td></tr>
+          <tr><td><BlogLink title={recom_title9} link={recom9}/></td></tr>
+          <tr><td><BlogLink title={recom_title8} link={recom8}/></td></tr>
+          <tr><td><BlogLink title={recom_title7} link={recom7}/></td></tr>
+          <tr><td><BlogLink title={recom_title6} link={recom6}/></td></tr>
+          <tr><td><BlogLink title={recom_title5} link={recom5}/></td></tr>
+          <tr><td><BlogLink title={recom_title4} link={recom4}/></td></tr>
+          <tr><td><BlogLink title={recom_title3} link={recom3}/></td></tr>
+          <tr><td><BlogLink title={recom_title2} link={recom2}/></td></tr>
+          <tr><td><BlogLink title={recom_title1} link={recom1}/></td></tr>
         </tbody>
       </Table>
     </div>
@@ -125,7 +129,7 @@ class Paper extends Component {
             <Col className="font-left">
               <Row>
                 <Col className="bold">Recommendation system:</Col>
-                <Col>{stars1} &nbsp;&nbsp;17 <p/></Col>
+                <Col>{stars1} &nbsp;&nbsp;18 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Natural language processing:</Col>
