@@ -86,16 +86,33 @@ function Startup() {
   const link31="https://medium.com/@arthurlee_73761/podcast-note-32-how-to-absorb-information-c16ddd516bd2";
   const link32="https://medium.com/@arthurlee_73761/podcast-note-33-e-commerce-in-other-countries-66ef6a18bd3f";
   const link33="https://medium.com/@arthurlee_73761/podcast-note-34-launch-a-new-business-not-only-in-big-cities-d2f6829c88d4";
-  const link34='';
+  const link34='https://medium.com/@arthurlee_73761/podcast-note-35-new-consumer-brand-coming-up-a0640ec58af7';
+  const link35='https://medium.com/@arthurlee_73761/podcast-note-37-short-video-market-e4db06926c8d';
+  const link36='https://medium.com/@arthurlee_73761/podcast-note-38-grocery-48717acdb176';
+  const link37='https://medium.com/@arthurlee_73761/podcast-note-39-career-path-130c4b199314';
+  const link38='https://medium.com/@arthurlee_73761/podcast-note-40-vc-industry-8c6a15a046ed';
+  const link39='https://medium.com/@arthurlee_73761/podcast-note-41-beijing-kwai-technology-fe726c7065ea';
+
   const title31="31.How to absorb information";
   const title32="32.E-Commerce in other countries";
   const title33="33.launch a new business not only in big cities";
-  const title34='';
+  const title34='34.new consumer brand coming up';
+  const title35='35.short video market';
+  const title36='36.Grocery';
+  const title37='37.career path';
+  const title38='38.VC industry';
+  const title39='39.Beijing Kwai Technology';
 
   return (
     <div className="div-left">
     <Table striped bordered hover>
       <tbody>
+        <tr><td><BlogLink title={title39} link={link39}/></td></tr>
+        <tr><td><BlogLink title={title38} link={link38}/></td></tr>
+        <tr><td><BlogLink title={title37} link={link37}/></td></tr>
+        <tr><td><BlogLink title={title36} link={link36}/></td></tr>
+        <tr><td><BlogLink title={title35} link={link35}/></td></tr>
+        <tr><td><BlogLink title={title34} link={link34}/></td></tr>
         <tr><td><BlogLink title={title33} link={link33}/></td></tr>
         <tr><td><BlogLink title={title32} link={link32}/></td></tr>
         <tr><td><BlogLink title={title31} link={link31}/></td></tr>
@@ -139,13 +156,17 @@ function Engineering() {
   const link1="https://medium.com/@arthurlee_73761/engineer-blog-note-contextual-relevance-in-ads-ranking-d22dad9d1803";
   const link2="https://medium.com/@arthurlee_73761/engineer-blog-note-a-real-world-visual-discovery-system-1b51d89d719";
   const link3="https://medium.com/@arthurlee_73761/engineer-blog-note-3-embedding-at-twitter-2fc3e2d8a736";
+  const link4="https://medium.com/@arthurlee_73761/engineer-blog-note-4-pinsage-a-new-graph-convolutional-neural-network-for-web-scale-recommender-1e4649c42500";
+  
   const title1="1.Contextual relevance in ads ranking"
   const title2="2.A real world visual discovery system"
   const title3="3.Embedding at Twitter"
+  const title4="4.PinSage: A new graph convolutional neural network for web-scale recommender systems"
   return (
     <div className="div-left">
     <Table striped bordered hover>
       <tbody>
+        <tr><td><BlogLink title={title4} link={link4}/></td></tr>
         <tr><td><BlogLink title={title3} link={link3}/></td></tr>
         <tr><td><BlogLink title={title2} link={link2}/></td></tr>
         <tr><td><BlogLink title={title1} link={link1}/></td></tr>
@@ -195,7 +216,7 @@ for (let i = 0; i < 2; i++) {
   stars2.push(star);
 }
 
-function PodcastBlog() {
+function MyBlog() {
   return(
     <Container>
     <div className='u-center-text u-margin-bottom-big'>
@@ -205,11 +226,11 @@ function PodcastBlog() {
       <Col className="font-left">
         <Row>
           <Col className="bold">Startup podcasts:</Col>
-          <Col>{stars1} &nbsp;&nbsp;33 <p/></Col>
+          <Col>{stars1} &nbsp;&nbsp;39 <p/></Col>
         </Row>
         <Row>
           <Col className="bold">Engineering blogs:</Col>
-          <Col>{stars1} &nbsp;&nbsp;3 <p/></Col>
+          <Col>{stars1} &nbsp;&nbsp;4 <p/></Col>
         </Row>
         <Row>
           <Col className="bold">Investment podcasts:</Col>
@@ -242,4 +263,4 @@ function PodcastBlog() {
     </Container>
   )
 }
-export default PodcastBlog;
+export default MyBlog;

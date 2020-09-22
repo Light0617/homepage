@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Container, Col, Nav, Card, Tabs, Tab, Button } from 'react-bootstrap';
-import PodcastBlog from './PodcastBlogComponent';
+import MyBlog from './MyBlogComponent';
 
 const bert_link1="https://text-machine-lab.github.io/blog/2020/bert-secrets/?utm_campaign=Thought%20Leadership&utm_content=122769302&utm_medium=social&utm_source=linkedin&hss_channel=lis-NG8w66b_uw";
 const bert_link2="https://medium.com/dair-ai/does-bert-actually-understand-language-550dd07f38d3";
@@ -119,7 +119,7 @@ class Blog extends Component {
   render() {
     return (
       <div id="course" className="blog-style">
-        <PodcastBlog/>
+        <MyBlog/>
         <CollectedBlog/>
       </div>
     )
