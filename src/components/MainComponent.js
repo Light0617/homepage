@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './HomePage/PageComponent';
 import BlogPage from './BlogPage/PageComponent';
 import BookPage from './BookPage/PageComponent';
+import FriendPage from './FriendPage/PageComponent';
 import CoursePage from './CoursePage/PageComponent';
 import PaperPage from './PaperPage/PageComponent';
 
@@ -45,6 +46,7 @@ class Main extends Component {
               <Route path='/paper' component={PaperPage} />
               <Route path='/blog' component={BlogPage} />
               <Route path='/book' component={BookPage} />
+              <Route path='/friends' component={FriendPage} />
               <Route path='/course' component={CoursePageContent} />
               <Redirect to='/' />
             </HashRouter>

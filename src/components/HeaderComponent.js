@@ -26,6 +26,7 @@ class Header extends Component {
               <NavLink to="/blog" className="nav-link text-uppercase grey-font-color">blog</NavLink>
               <NavLink to="/course" className="nav-link text-uppercase grey-font-color">learning</NavLink>
               <NavLink to="/book" className="nav-link text-uppercase grey-font-color">book</NavLink>
+              <NavLink to="/friends" className="nav-link text-uppercase grey-font-color">friends</NavLink>
               {/* <Nav.Link href="#contact" className="text-uppercase grey-font-color">contact</Nav.Link> */}
             </Navbar.Collapse>
           </Navbar>
