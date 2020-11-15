@@ -4,9 +4,17 @@ import pic1 from '../../assets/book1.jpg'
 import pic2 from '../../assets/book2.jpg'
 import pic3 from '../../assets/book3.jpg'
 
+import pic4 from '../../assets/book4.jpg'
+import pic5 from '../../assets/book5.jpg'
+import pic6 from '../../assets/book6.jpg'
+
 const title1 = 'Thinking, fast and slow';
 const title2 = 'Why nations fail';
 const title3 = 'Species';
+
+const title4 = 'The Long View';
+const title5 = 'On Writing Well';
+const title6 = 'Humble Inquiry';
 
 function BookCard(props) {
   return (
@@ -42,6 +50,11 @@ class Book extends Component {
               <BookCard img={pic3} title={title3} link='#disabled' />
             </Row>
           </div>
+          <Row xl="3" lg="2" md="2" sm="1" className='padding-top hidden-xs-down'>
+              <BookCard img={pic4} title={title4} link='#disabled' />
+              <BookCard img={pic5} title={title5} link='#disabled' />
+              <BookCard img={pic6} title={title6} link='#disabled' />
+          </Row>
         </Container>
       </div>
     )
