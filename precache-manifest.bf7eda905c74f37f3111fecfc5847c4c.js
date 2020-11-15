@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "416d1c507b087161b0af2722d05cd06a",
+    "revision": "4d0c79ff20ca3360acf453fc2f4cb8d9",
     "url": "/homepage/index.html"
   },
   {
-    "revision": "2dfa6d89b21433e6956a",
+    "revision": "2211caff78b97c3387bc",
     "url": "/homepage/static/css/2.8f7f588f.chunk.css"
   },
   {
-    "revision": "b173d463726976c7ff23",
+    "revision": "aeafc405adbf0d1c273d",
     "url": "/homepage/static/css/main.7f77de9f.chunk.css"
   },
   {
-    "revision": "2dfa6d89b21433e6956a",
-    "url": "/homepage/static/js/2.ed3179b7.chunk.js"
+    "revision": "2211caff78b97c3387bc",
+    "url": "/homepage/static/js/2.f1b8314a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/homepage/static/js/2.ed3179b7.chunk.js.LICENSE.txt"
+    "url": "/homepage/static/js/2.f1b8314a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b173d463726976c7ff23",
-    "url": "/homepage/static/js/main.90648563.chunk.js"
+    "revision": "aeafc405adbf0d1c273d",
+    "url": "/homepage/static/js/main.18001c4d.chunk.js"
   },
   {
     "revision": "e9686212bc20254c2e17",
@@ -328,6 +328,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homepage/static/media/book3.88f54219.jpg"
   },
   {
+    "revision": "94275f210d5c13456b1e2f11c2cf9129",
+    "url": "/homepage/static/media/book4.94275f21.jpg"
+  },
+  {
+    "revision": "983f1c0e67d2b2fe996df397240e5ea4",
+    "url": "/homepage/static/media/book5.983f1c0e.jpg"
+  },
+  {
+    "revision": "f859d65b86df03d11264dec3193aff4d",
+    "url": "/homepage/static/media/book6.f859d65b.jpg"
+  },
+  {
     "revision": "e94f5e61ac94b6b2b98f1a0d38d2483b",
     "url": "/homepage/static/media/course_header.e94f5e61.jpg"
   },
@@ -354,6 +366,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/homepage/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "4d255956691b6168c8176e230ab6a332",
+    "url": "/homepage/static/media/kevin.4d255956.jpeg"
   },
   {
     "revision": "19f9a22f45a15fbf80d420862bcadffb",
