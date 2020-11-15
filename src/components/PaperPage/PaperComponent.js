@@ -50,11 +50,15 @@ const recom20="https://medium.com/@arthurlee_73761/kdd17-visual-discovery-c7590e
 
 const recom_title21="KDD’18: Graph Convolutional Neural Networks for Web-Scale Recommender Systems";
 const recom_title22="KDD’19: Learning a Unified Embedding for Visual Search at Pinterest";
+const recom_title23="KDD 19': PinText: A Multitask Text Embedding System in Pinterest";
+const recom_title24="KDD 18': Notification Volume Control and Optimization System at Pinterest";
+const recom_title25="KDD 18': Real-time Personalization using Embeddings for Search Ranking at Airbnb";
 
 const recom21="https://medium.com/@arthurlee_73761/kdd17-graph-convolutional-neural-networks-for-web-scale-recommender-systems-96e8aa09e294";
 const recom22="https://medium.com/@arthurlee_73761/kdd19-learning-a-unified-embedding-for-visual-search-at-pinterest-37a69a00ec40";
-
-
+const recom23="https://medium.com/@arthurlee_73761/kdd-19-pintext-a-multitask-text-embedding-system-in-pinterest-8314a6e29705";
+const recom24="https://medium.com/@arthurlee_73761/kdd-18-notification-volume-control-and-optimization-system-at-pinterest-9e608ac89836";
+const recom25="https://medium.com/@arthurlee_73761/kdd-18-real-time-personalization-using-embeddings-for-search-ranking-at-airbnb-a28ae5e07b79";
 
 
 const nlp1="https://medium.com/@arthurlee_73761/coling14-deep-convolutional-neural-networks-for-sentiment-analysis-of-short-texts-c2d44182653d";
@@ -90,6 +94,9 @@ function RecommendationSystem() {
     <div className="div-left">
       <Table striped bordered hover>
         <tbody>
+          <tr><td><BlogLink title={recom_title25} link={recom25}/></td></tr>
+          <tr><td><BlogLink title={recom_title24} link={recom24}/></td></tr>
+          <tr><td><BlogLink title={recom_title23} link={recom23}/></td></tr>
           <tr><td><BlogLink title={recom_title22} link={recom22}/></td></tr>
           <tr><td><BlogLink title={recom_title21} link={recom21}/></td></tr>
           <tr><td><BlogLink title={recom_title20} link={recom20}/></td></tr>
@@ -174,7 +181,7 @@ class Paper extends Component {
             <Col className="font-left">
               <Row>
                 <Col className="bold">Recommendation system:</Col>
-                <Col>{stars1} &nbsp;&nbsp;22 <p/></Col>
+                <Col>{stars1} &nbsp;&nbsp;25 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Natural language processing:</Col>

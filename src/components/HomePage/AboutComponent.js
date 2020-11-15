@@ -117,25 +117,32 @@ class About extends Component {
             <Col className="font-left">
               <h2>Yelp&nbsp;&nbsp;<span className="fa fa-yelp fa-lg"/></h2>
               <span className="bold">Ads Machine Learning Engineer, San Francisco</span><p></p>
+              <span>Redesigned Ads Creative data logging pipeline to reduce engineer operation time with Data Lake,
+                RedshiftandKafkaand migrated downstreams jobs toSpark ETL, resulting in 
+                more maintainable production code.</span><p></p>
               <span>Delivered AB testing experiments for Ads Recall to increase user engagement
-              with data analysis, SQL, Redshift, ElasticSearch, Python and Java</span><p></p>
+              with data analysis, SQL, Redshift, ElasticSearch, Python and Java.</span><p></p>
               <span>Delivered features and batches for Ads Targeting to increase model reliability
-              and CTR with machine learning, pyspark, Python</span><p></p>
+              and CTR with machine learning, pyspark, Python.</span><p></p>
+              <span>Key collaborator between Ads, Intent and AdsUX teams to power several key features
+                 on Yelp PRO.</span><p></p>
+              <span>Developed Yelp Delivery features for Ads with ElasticSearch, Java and Python to 
+                deal with COVID pandemic.</span><p></p>
             </Col>
             <Col className="font-left">
               <h2>Hitachi Vantara</h2>
               <span className="bold">Full-Stack Engineer, Santa Clara</span><p></p>
-              <span>Delivered features for front-end and backends with Java Spring Boot, ElasticSearch, Angular.JS, React.JS and Docker</span><p></p>
+              <span>Delivered features for front-end and back-end with Java Spring Boot, ElasticSearch, Angular.JS, React.JS and Docker</span><p></p>
               <span>Designed and developed a real-time log tracking web application to visualize 10k+ logs with ElasticSearch, MongoDB, Vue.js and GoLang</span><p></p>
             </Col>
           </Row>
           <Row className="experience-block">
             <Col className="font-left">
-              <h2>Art Exhibition Project</h2>
-              <span className="bold">Machine Learning Engineer, New York remote</span><p></p>
-              <span>Collaborated with professor Huang and students from School of Visual Arts to apply Variational Autoencoder
+              <h2>Art Studio for Art Exhibition Project</h2>
+              <span className="bold">Tech Led, New York remote</span><p></p>
+              <span>Collaborated with professor Huang and a student from School of Visual Arts, which is the top Art school in the world, to apply Variational Autoencoder
               Generative Adversarial Network (VAE GAN) to generate a new Chinese word and do words morphing</span><p></p>
-              <span>Provided technical support (Python, deep learning) for their artworks</span><p></p>
+              <span>Provided technical consultant (Python, deep learning) for their artworks ideas.</span><p></p>
             </Col>
             <Col className="font-left">
               <h2>Academia Sinica</h2>
