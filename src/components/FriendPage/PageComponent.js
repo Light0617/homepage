@@ -9,7 +9,7 @@ class Page extends Component {
   render() {
     return (
       <div className="App">
-        <div className='header-style book-header-background' id='book_header'>
+        <div className='header-style friend-header-background' id='friend_header'>
           <Header />
         </div>
         <Friend />

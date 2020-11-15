@@ -29,6 +29,11 @@
     background-size: cover;
     background-position: top;
   }
+  .friend-header-background {
+    background-image: linear-gradient(to right bottom, rgba(146, 142, 146, 0.4), rgba(41, 40, 41, 0.5)), url("../assets/header/friend_header.jpg");
+    background-size: cover;
+    background-position: top;
+  }
   
   .icon-style {
     color: #fff;
