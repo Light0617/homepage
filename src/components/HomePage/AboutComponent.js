@@ -45,7 +45,7 @@ class About extends Component {
             <Col>
               <h1>More About Me</h1>
               <div id="about_summary">
-                <span>Living in San Francisco, a machine learning engineer dedicated in modeling and date engineering &nbsp;&nbsp;</span>
+                <span>Living in Sunnyvale, a machine learning engineer dedicated in modeling and infrastructure &nbsp;&nbsp;</span>
                 <FontAwesomeIcon icon={faFlask} /><br></br>
                 <span>During free time, I enjoy coffee, art, TV series and explore delicious food &nbsp;&nbsp;</span>
                 <FontAwesomeIcon icon={faMugHot} /><p></p><p></p>
@@ -78,28 +78,16 @@ class About extends Component {
                 <Col>{stars1} &nbsp;&nbsp;100 <p/></Col>
               </Row>
               <Row>
-                <Col className="bold">data engineering:</Col>
-                <Col>{stars2} &nbsp;&nbsp;85 <p/></Col>
-              </Row>
-              <Row>
-                <Col className="bold">deep learning (NLP):</Col>
-                <Col>{stars5} &nbsp;&nbsp;80 <p/></Col>
-              </Row>
-              <Row>
-                <Col className="bold">deep learning (CV):</Col>
-                <Col>{stars3} &nbsp;&nbsp;70 <p/></Col>
+                <Col className="bold">deep learning:</Col>
+                <Col>{stars5} &nbsp;&nbsp;95 <p/></Col>
               </Row>
               <Row>
                 <Col className="bold">Statistics:</Col>
-                <Col>{stars4} &nbsp;&nbsp;80 <p/></Col>
+                <Col>{stars4} &nbsp;&nbsp;95 <p/></Col>
               </Row>
               <Row>
-                <Col className="bold">full-stack engineering:</Col>
+                <Col className="bold">Machine Learning infrastructure:</Col>
                 <Col>{stars6} &nbsp;&nbsp;80 <p/></Col>
-              </Row>
-              <Row>
-                <Col className="bold">automation:</Col>
-                <Col>{stars7} &nbsp;&nbsp;60 <p/></Col>
               </Row>
             </Col>
           </Row>
